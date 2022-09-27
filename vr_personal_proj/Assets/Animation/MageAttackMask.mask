@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MageAttackMask
+  m_Mask: 01000000010000000100000000000000000000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: GlobalMove
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Left_LegUp
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Left_LegUp/bn_Left_Leg
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Left_LegUp/bn_Left_Leg/bn_Left_Foot
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Left_LegUp/bn_Left_Leg/bn_Left_Foot/bn_Left_Toe
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Left_LegUp/bn_Left_Leg/bn_Left_Foot/bn_Left_Toe/be_Left_Toe_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_LoinCloth_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_LoinCloth_A/bn_LoinCloth_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_LoinCloth_A/bn_LoinCloth_B/bn_LoinCloth_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_LoinCloth_A/bn_LoinCloth_B/bn_LoinCloth_C/bn_LoinCloth_End
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Right_LegUp
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Right_LegUp/bn_Right_Leg
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Right_LegUp/bn_Right_Leg/bn_Right_Foot
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Right_LegUp/bn_Right_Leg/bn_Right_Foot/bn_Right_Toe
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Right_LegUp/bn_Right_Leg/bn_Right_Foot/bn_Right_Toe/be_Right_Toe_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Satchel
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B
+    m_Weight: 1
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Index_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Index_A/bn_Left_Index_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Index_A/bn_Left_Index_B/bn_Left_Index_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Index_A/bn_Left_Index_B/bn_Left_Index_C/be_Left_Index_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Middle_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Middle_A/bn_Left_Middle_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Middle_A/bn_Left_Middle_B/bn_Left_Middle_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Middle_A/bn_Left_Middle_B/bn_Left_Middle_C/be_Left_Middle_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Pinky_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Pinky_A/bn_Left_Pinky_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Pinky_A/bn_Left_Pinky_B/bn_Left_Pinky_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Pinky_A/bn_Left_Pinky_B/bn_Left_Pinky_C/be_Left_Pinky_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Ring_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Ring_A/bn_Left_Ring_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Ring_A/bn_Left_Ring_B/bn_Left_Ring_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Ring_A/bn_Left_Ring_B/bn_Left_Ring_C/be_Left_Ring_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Thumb_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Thumb_A/bn_Left_Thumb_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Thumb_A/bn_Left_Thumb_B/bn_Left_Thumb_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Thumb_A/bn_Left_Thumb_B/bn_Left_Thumb_C/be_Left_Thumb_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head/bn_HairSway
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head/bn_Left_Eye
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head/bn_Left_Eye/bn_Left_Eye_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head/bn_Left_LowerEyeLid
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head/bn_Left_UpperEyeLid
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head/bn_Right_Eye
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head/bn_Right_Eye/bn_Right_Eye_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head/bn_Right_LowerEyeLid
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head/bn_Right_UpperEyeLid
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Aux_StaffAttach
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Index_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Index_A/bn_Right_Index_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Index_A/bn_Right_Index_B/bn_Right_Index_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Index_A/bn_Right_Index_B/bn_Right_Index_C/be_Right_Index_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Middle_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Middle_A/bn_Right_Middle_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Middle_A/bn_Right_Middle_B/bn_Right_Middle_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Middle_A/bn_Right_Middle_B/bn_Right_Middle_C/be_Right_Middle_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Pinky_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Pinky_A/bn_Right_Pinky_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Pinky_A/bn_Right_Pinky_B/bn_Right_Pinky_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Pinky_A/bn_Right_Pinky_B/bn_Right_Pinky_C/be_Right_Pinky_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Ring_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Ring_A/bn_Right_Ring_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Ring_A/bn_Right_Ring_B/bn_Right_Ring_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Ring_A/bn_Right_Ring_B/bn_Right_Ring_C/be_Right_Ring_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Thumb_A
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Thumb_A/bn_Right_Thumb_B
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Thumb_A/bn_Right_Thumb_B/bn_Right_Thumb_C
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm/bn_Right_ForearmRoll/bn_Right_Wrist/bn_Right_Thumb_A/bn_Right_Thumb_B/bn_Right_Thumb_C/be_Right_Thumb_Aim
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_RuffArmor
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Staff_Handle
+    m_Weight: 1
+  - m_Path: GlobalMove/bn_Staff_Handle/bn_Staff_Float
+    m_Weight: 0
+  - m_Path: GlobalMove/bn_Staff_Handle/bn_Staff_Tip
+    m_Weight: 0
+  - m_Path: skn_EarthMage_Body
+    m_Weight: 0
+  - m_Path: skn_EarthMage_Staff
+    m_Weight: 0
