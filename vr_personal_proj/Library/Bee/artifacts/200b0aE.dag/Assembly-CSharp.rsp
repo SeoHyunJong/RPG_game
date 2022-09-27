@@ -433,6 +433,7 @@
 "Assets/Script/PlayerController.cs"
 "Assets/Script/PlayerStat.cs"
 "Assets/Script/PlayerSummonMagic.cs"
+"Assets/Script/QuestText.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

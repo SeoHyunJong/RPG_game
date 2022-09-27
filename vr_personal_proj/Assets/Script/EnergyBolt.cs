@@ -16,7 +16,7 @@ public class EnergyBolt : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.tag != "Player") {
+        if (other.tag != "Player" && other.tag != "NPC") {
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }

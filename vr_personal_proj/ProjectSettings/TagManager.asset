@@ -5,9 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - TAZOFX
   - Magic
   - Environment
+  - NPC
   layers:
   - Default
   - TransparentFX
