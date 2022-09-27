@@ -7,31 +7,29 @@ public class PlayerController : MonoBehaviour
     public int JumpPower;
     public int countOfArrow = 0;
     public GameObject charging;
-
-    private bool IsJumping;
-    private bool isSkillAction;
-
+    public Animator animator;
     [SerializeField]
     private float walkSpeed;
-
     [SerializeField]
     private float lookSensitivity; 
-
     [SerializeField]
     private float cameraRotationLimit;  
-    private float currentCameraRotationX;  
-
     [SerializeField]
     private Camera theCamera; 
+    //Control variable
+    private bool IsJumping;
+    private bool isSkillAction;
+    private float currentCameraRotationX;  
+    //Component
     private Rigidbody myRigid;
     private Transform myTrans;
-
-    public Animator animator;
+    private PlayerStat playerStat;
 
     // Start is called before the first frame update
     void Start() {
          myRigid = GetComponent<Rigidbody>();
          myTrans = GetComponent<Transform>();
+         playerStat = GetComponent<PlayerStat>();
     }
 
     // Update is called once per frame
@@ -101,7 +99,8 @@ public class PlayerController : MonoBehaviour
     }
 
     private void LeftClickAction() {
-        if (Input.GetKey(KeyCode.Mouse0)) {
+        if (Input.GetKey(KeyCode.Mouse0) && playerStat.magicPower >= 30) {
+            playerStat.magicPower -= 30;
             StartCoroutine(leftclick());
         }
     }
@@ -109,7 +108,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator rightclick() {
         isSkillAction = true;
         countOfArrow = 0;
-        GameObject temp = Instantiate(charging, transform.position, transform.rotation);
+        GameObject temp = Instantiate(charging, transform.position + new Vector3(0,1,0), transform.rotation);
         temp.transform.SetParent(transform);
         while (Input.GetKey(KeyCode.Mouse1)) {
             animator.SetBool("IsRightClick", true);
@@ -117,13 +116,14 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
         animator.SetBool("IsRightClick", false);
-        yield return new WaitForSeconds(1.2f);
         Destroy(temp);
+        yield return new WaitForSeconds(1.2f);
         isSkillAction = false;
     }
 
     private void RightClick() {
-        if (Input.GetKey(KeyCode.Mouse1)) {
+        if (Input.GetKey(KeyCode.Mouse1) && playerStat.magicPower >= 100) {
+            playerStat.magicPower -= 100;
             StartCoroutine(rightclick());
         }
     }

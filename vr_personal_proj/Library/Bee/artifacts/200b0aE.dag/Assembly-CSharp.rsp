@@ -431,6 +431,7 @@
 "Assets/Script/EnergyBolt.cs"
 "Assets/Script/ExplosionRemove.cs"
 "Assets/Script/PlayerController.cs"
+"Assets/Script/PlayerStat.cs"
 "Assets/Script/PlayerSummonMagic.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

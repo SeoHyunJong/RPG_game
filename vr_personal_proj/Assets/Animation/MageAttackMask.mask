@@ -7,7 +7,7 @@ AvatarMask:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MageAttackMask
-  m_Mask: 01000000010000000100000000000000000000000100000001000000010000000100000001000000010000000100000001000000
+  m_Mask: 01000000000000000100000000000000000000000100000001000000010000000100000001000000010000000100000001000000
   m_Elements:
   - m_Path: 
     m_Weight: 1
@@ -48,9 +48,9 @@ AvatarMask:
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A
     m_Weight: 0
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B
-    m_Weight: 1
-  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder
     m_Weight: 0
+  - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder
+    m_Weight: 1
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp
     m_Weight: 0
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm
@@ -100,7 +100,7 @@ AvatarMask:
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Left_Shoulder/bn_Left_ArmUp/bn_Left_ForeArm/bn_Left_ForearmRoll/bn_Left_Wrist/bn_Left_Thumb_A/bn_Left_Thumb_B/bn_Left_Thumb_C/be_Left_Thumb_Aim
     m_Weight: 0
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B
     m_Weight: 0
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head
@@ -124,7 +124,7 @@ AvatarMask:
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Neck_A/bn_Neck_B/bn_Head/bn_Right_UpperEyeLid
     m_Weight: 0
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp
     m_Weight: 0
   - m_Path: GlobalMove/bn_Hips/bn_Spine_A/bn_Spine_B/bn_Right_Shoulder/bn_Right_ArmUp/bn_Right_ForeArm
