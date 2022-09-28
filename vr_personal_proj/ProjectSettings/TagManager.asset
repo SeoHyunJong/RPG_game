@@ -9,6 +9,7 @@ TagManager:
   - Environment
   - NPC
   - Summary
+  - Monster
   layers:
   - Default
   - TransparentFX

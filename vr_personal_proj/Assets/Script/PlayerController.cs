@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private bool IsWindow;
     private bool IsLeftClick;
     private Vector3 rayHitPos;
+    private GameObject monster;
     //Component
     private Rigidbody myRigid;
     private Transform myTrans;
@@ -186,14 +187,17 @@ public class PlayerController : MonoBehaviour
 
     private void raycast() {
         Vector3 origin = new Vector3(0, 1, 1);
-        Debug.DrawRay(transform.TransformPoint(origin), transform.forward, Color.red, 5);
+        //Debug.DrawRay(transform.TransformPoint(origin), transform.forward, Color.red, 5);
         //다이렉션을 로컬 좌표로 해보았다.
         Ray ray = new Ray(transform.TransformPoint(origin), transform.forward);
         RaycastHit hitData;
+        monster = null;
 
         if(Physics.Raycast(ray, out hitData, 20)) {
             rayHitPos = hitData.point;
-            Debug.Log(rayHitPos);
+            if(hitData.collider.tag == "Monster") {
+                monster = hitData.transform.gameObject;
+            }
         } else {
             rayHitPos = transform.TransformPoint(new Vector3(0, 1, 20));
         }
@@ -203,9 +207,16 @@ public class PlayerController : MonoBehaviour
         isSkillAction = true;
         raycast();
         GameObject temp = Instantiate(purpleBomb, rayHitPos, transform.rotation);
+        if(monster) {
+            temp.transform.SetParent(monster.transform);
+        }
         animator.SetBool("IsQClick", true);
         yield return new WaitForSeconds(1.6f);
         animator.SetBool("IsQClick", false);
+        if(monster) {
+            BearController bear = monster.GetComponent<BearController>();
+            bear.IsTookDamage = true;
+        }
         yield return new WaitForSeconds(1.6f);
         Destroy(temp);
         isSkillAction = false;
