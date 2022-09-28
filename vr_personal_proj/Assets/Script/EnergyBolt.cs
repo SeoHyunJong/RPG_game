@@ -23,8 +23,10 @@ public class EnergyBolt : MonoBehaviour
             Destroy(gameObject);
         }
         if (other.tag == "Monster") {
-            BearController bear = other.gameObject.GetComponent<BearController>();
-            bear.IsTookDamage = true;
+            BearController bearController = other.gameObject.GetComponent<BearController>();
+            bearController.IsTookDamage = true;
+            BearStat bearStat = other.gameObject.GetComponent<BearStat>();
+            bearStat.healthPower -= 50;
         }
     }
 }

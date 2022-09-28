@@ -430,6 +430,7 @@
 "Assets/Import/Tazo_fx/Script/tazo_rotate.cs"
 "Assets/Import/Tazo_fx/Script/tazo_UVScroller.cs"
 "Assets/Script/BearController.cs"
+"Assets/Script/BearStat.cs"
 "Assets/Script/ButtonAction.cs"
 "Assets/Script/Communicate.cs"
 "Assets/Script/EnergyBolt.cs"

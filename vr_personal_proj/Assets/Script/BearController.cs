@@ -10,35 +10,49 @@ public class BearController : MonoBehaviour
     private float walkSpeed = 20;
     //Component
     private Rigidbody myRigid;
+    private BearStat stat;
     //Control
     private bool IsRunning;
     private bool IsAttack;
+    private bool IsDead;
     public bool IsTookDamage;
 
     void Start()
     {
         myRigid = GetComponent<Rigidbody>();
+        stat = GetComponent<BearStat>();
     }
 
     void Update()
     {
-        if(Vector3.Distance(transform.position, player.transform.position) <= 20) {
-            animator.SetBool("IsRunning", true);
-            IsRunning = true;
-        }
-        if(Vector3.Distance(transform.position, player.transform.position) <= 8) {
-            animator.SetBool("IsAttack", true);
-            IsAttack = true;
-        } else {
-            animator.SetBool("IsAttack", false);
-            IsAttack = false;
-        }
+        if (!IsDead) {
+            if(Vector3.Distance(transform.position, player.transform.position) <= 20) {
+                animator.SetBool("IsRunning", true);
+                IsRunning = true;
+            }
+            if(Vector3.Distance(transform.position, player.transform.position) <= 8) {
+                animator.SetBool("IsAttack", true);
+                IsAttack = true;
+            } else {
+                animator.SetBool("IsAttack", false);
+                IsAttack = false;
+            }
 
-        if(IsRunning && !IsTookDamage && !IsAttack) {
-            Moving();
-        }
-        if(IsTookDamage) {
-            StartCoroutine(tookDamage());
+            if(IsRunning && !IsTookDamage && !IsAttack) {
+                Moving();
+            }
+            if(IsTookDamage) {
+                StartCoroutine(tookDamage());
+            }
+
+            if(stat.healthPower <= 0) {
+                IsDead = true;
+                animator.SetTrigger("IsDead");
+                animator.SetBool("IsRunning", false);
+                IsRunning = false;
+                animator.SetBool("IsAttack", false);
+                IsAttack = false;
+            }
         }
     }
 

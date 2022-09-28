@@ -214,8 +214,10 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(1.6f);
         animator.SetBool("IsQClick", false);
         if(monster) {
-            BearController bear = monster.GetComponent<BearController>();
-            bear.IsTookDamage = true;
+            BearController bearController = monster.GetComponent<BearController>();
+            bearController.IsTookDamage = true;
+            BearStat bearStat = monster.GetComponent<BearStat>();
+            bearStat.healthPower -= 300;
         }
         yield return new WaitForSeconds(1.6f);
         Destroy(temp);
