@@ -21,7 +21,12 @@ public class PlayerStat : MonoBehaviour
 
     void Update() {
         hpSlider.value = healthPower;
-        mpSlider.value = magicPower;    
+        mpSlider.value = magicPower;
+
+        if (healthPower <= 0) {
+            transform.position = new Vector3(22,1,30);
+            healthPower = 100;
+        }    
     }
 
     IEnumerator restore() { //초당 체력 10, 마나 15 회복

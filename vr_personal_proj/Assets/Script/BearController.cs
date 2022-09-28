@@ -52,6 +52,7 @@ public class BearController : MonoBehaviour
                 IsRunning = false;
                 animator.SetBool("IsAttack", false);
                 IsAttack = false;
+                player.GetComponent<Communicate>().complete = true;
             }
         }
     }
@@ -67,6 +68,10 @@ public class BearController : MonoBehaviour
         yield return new WaitForSeconds(1);
         animator.SetBool("IsTookDamage", false);
         IsTookDamage = false;
+        if (!IsRunning) {
+            animator.SetBool("IsRunning", true);
+            IsRunning = true;
+        }
     }
 
     public void Hit() {
