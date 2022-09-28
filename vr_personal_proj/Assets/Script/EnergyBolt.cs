@@ -6,12 +6,14 @@ public class EnergyBolt : MonoBehaviour
 {
     public float speed = 20f;
     public GameObject explosion;
+    private GameObject camera;
     Rigidbody bulletRigidbody;
 
     void Start()
     {
         bulletRigidbody = GetComponent<Rigidbody>();
-        bulletRigidbody.velocity = transform.forward * speed;
+        camera = GameObject.Find("Player/Camera");
+        bulletRigidbody.velocity = camera.transform.forward * speed;
         Destroy(gameObject, 4f);
     }
 
@@ -20,7 +22,6 @@ public class EnergyBolt : MonoBehaviour
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
-
         if (other.tag == "Monster") {
             BearController bear = other.gameObject.GetComponent<BearController>();
             bear.IsTookDamage = true;

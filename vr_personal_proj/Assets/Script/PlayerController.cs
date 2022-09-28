@@ -186,20 +186,20 @@ public class PlayerController : MonoBehaviour
     }
 
     private void raycast() {
-        Vector3 origin = new Vector3(0, 1, 1);
+        Vector3 origin = new Vector3(0, 1.6f, 1);
         //Debug.DrawRay(transform.TransformPoint(origin), transform.forward, Color.red, 5);
         //다이렉션을 로컬 좌표로 해보았다.
-        Ray ray = new Ray(transform.TransformPoint(origin), transform.forward);
+        Ray ray = new Ray(transform.TransformPoint(origin), theCamera.transform.forward);
         RaycastHit hitData;
         monster = null;
 
-        if(Physics.Raycast(ray, out hitData, 20)) {
+        if(Physics.Raycast(ray, out hitData, 40)) {
             rayHitPos = hitData.point;
             if(hitData.collider.tag == "Monster") {
                 monster = hitData.transform.gameObject;
             }
         } else {
-            rayHitPos = transform.TransformPoint(new Vector3(0, 1, 20));
+            rayHitPos = transform.TransformPoint(new Vector3(0, 1, 40));
         }
     }
 

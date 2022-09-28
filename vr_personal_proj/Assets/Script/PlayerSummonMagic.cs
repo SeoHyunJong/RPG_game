@@ -18,7 +18,7 @@ public class PlayerSummonMagic : MonoBehaviour
     public void EnergyArrowCreate() {
         playerController = GetComponent<PlayerController>();
         for (int i = 0; i < Mathf.Clamp(playerController.countOfArrow, 0, 5); i++) {
-            Instantiate(energyArrow, transform.position + transform.forward * i + new Vector3(0,1.2f,0), transform.rotation);
+            Instantiate(energyArrow, transform.position + transform.forward * i + new Vector3(0,1.6f,0), transform.rotation);
         }
     }
 }
