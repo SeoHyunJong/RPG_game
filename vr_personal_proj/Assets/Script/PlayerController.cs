@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     private bool isSkillAction;
     private float currentCameraRotationX;  
     private bool IsWindow;
+    private bool IsLeftClick;
+    private Vector3 rayHitPos;
     //Component
     private Rigidbody myRigid;
     private Transform myTrans;
@@ -47,6 +49,8 @@ public class PlayerController : MonoBehaviour
             ShiftClick();
             EClick();
             QClick();
+        }
+        if (!IsLeftClick) {
             CameraRotation();
             CharacterRotation();
         }
@@ -103,9 +107,11 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator leftclick() {
         isSkillAction = true;
+        IsLeftClick = true;
         animator.SetBool("IsLeftClick", true);
         yield return new WaitForSeconds(1);
         animator.SetBool("IsLeftClick", false);
+        IsLeftClick = false;
         isSkillAction = false;
     }
 
@@ -178,10 +184,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void raycast() {
+        Vector3 origin = new Vector3(0, 1, 1);
+        Debug.DrawRay(transform.TransformPoint(origin), transform.forward, Color.red, 5);
+        //다이렉션을 로컬 좌표로 해보았다.
+        Ray ray = new Ray(transform.TransformPoint(origin), transform.forward);
+        RaycastHit hitData;
+
+        if(Physics.Raycast(ray, out hitData, 20)) {
+            rayHitPos = hitData.point;
+            Debug.Log(rayHitPos);
+        } else {
+            rayHitPos = transform.TransformPoint(new Vector3(0, 1, 20));
+        }
+    }
+
     IEnumerator qclick() {
         isSkillAction = true;
-        GameObject temp = Instantiate(purpleBomb, transform.position + new Vector3(0,1,0), transform.rotation);
-        temp.transform.SetParent(transform);
+        raycast();
+        GameObject temp = Instantiate(purpleBomb, rayHitPos, transform.rotation);
         animator.SetBool("IsQClick", true);
         yield return new WaitForSeconds(1.6f);
         animator.SetBool("IsQClick", false);
